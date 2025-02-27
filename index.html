@@ -9,21 +9,29 @@
     <meta name="description" content="AshleyJones - Resume, Cv, Personal Portfolio Responsive Website Template">
     <meta name="ashleyJones" content="">
     <title>Simec Nav</title>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
     <!-- Favicon  Images-->
     <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
     <!-- Animate Css -->
-    <link rel="stylesheet" href="css/vendors/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="css/vendors/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
     <!-- Owl Carousel-->
-    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="css/plugins/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css"> -->
     <!-- Main Css  -->
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Responsive Css / All Desktop/Mobile/Tab/ Device  -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <style>
 
@@ -139,32 +147,304 @@
 
     <div class="banner_section">
         <div class="banner_effect">
-                <div class="banner_content">
-                    <h1>Delicious <span>Food,</span>  Delivered to You</h1>
-                    <p>Fresh ingredients, tasty recipes,  and fast delivery</p>
-                    <button>View More</button>
+            <div class="banner_content left_to_right">
+                <h1>Delicious <span class="gradient-text">Food,</span> Delivered to You</h1>
+                <p>Fresh ingredients, tasty recipes, and fast delivery</p>
+                <div class="btns">
+                    <a href="#">Click Me</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="">
+        <div class="secound_section">
+            <h1>Popular Food Items</h1>
+            <div class="bottom_to_top secound_section_contain">
+                <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                <h4>Chicken Pizza</h4>
+                <p>The registration fee</p>
+                <p>$26.99</p>
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="secound_section_bg" style="background-color: #F4F1EA;">
+
+        <h1>Top Picks for You</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section another_element">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="secound_section">
+                        <div class="bottom_to_top secound_section_contain">
+                            <img class="rotating-border" src="./img/bargar.jpg" alt="bargar Image">
+                            <h4>Chicken Pizza</h4>
+                            <p>The registration fee</p>
+                            <p>$26.99</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Add Pagination (optional) -->
+
+
+                <!-- Add Navigation (optional) -->
+
+            </div>
         </div>
 
 
 
-        
-    </div>
 
 
 
+        <!--Script & Plugin-->
 
-    <!--Script & Plugin-->
+        <!--jquery-->
+        <script src="js/vendors/jquery-3.7.1.min.js"></script>
+        <!--Bootstrap js-->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <!--Owl Main Js-->
+        <script src="js/plugins/owl.carousel.min.js"></script>
+        <script src="js/plugins/wow.min.js"></script>
+        <script src="js/main.js"></script>
 
-    <!--jquery-->
-    <script src="js/vendors/jquery-3.7.1.min.js"></script>
-    <!--Bootstrap js-->
-    <!-- <script src="js/vendors/bootstrap.bundle.min.js"></script> -->
-    <!--Owl Main Js-->
-    <!-- <script src="js/plugins/owl.carousel.min.js"></script> -->
-    <!-- <script src="js/plugins/wow.min.js"></script> -->
-    <script src="js/main.js"></script>
-    <!--Script & Plugin End-->
+        <!--Script & Plugin End-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.fromTo(".left_to_right",
+                    { opacity: 0, x: -150 }, // ✅ Corrected comma placement
+                    {
+                        opacity: 1,
+                        x: 0, // ✅ Ensuring it animates back to normal position
+                        duration: 1.5,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: ".left_to_right",
+                            toggleActions: "play none none reverse",
+                            // markers: true // ✅ Show scroll trigger markers
+                        }
+                    }
+                );
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".secound_section",
+                        stagger: 0.1
+                        // toggleActions: "play none none reverse",
+
+                    }
+                })
+                    // .fromTo(".swiper-slide:nth-child(1)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.01, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(2)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(3)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(4)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(5)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(6)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+                    // .fromTo(".swiper-slide:nth-child(7)",
+                    //     { opacity: 0, y: 150 },
+                    //     { opacity: 1, y: 0, duration: .4, delay: 0.0, ease: "power2.out" }
+                    // )
+
+                    .fromTo(".swiper-slide",
+                        { opacity: 0, y: 150 },
+                        {
+                            opacity: 1,
+                            y: 0,
+                            duration: 0.5,
+                            ease: "power2.out",
+                            stagger: 0.1 // Each slide appears with a 0.2s delay
+                        }
+                    );
+
+            });
+
+            const swiper = new Swiper('.swiper-container', {
+                loop: true, // Loop the slides
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    // When screen width is 0px or greater
+                    0: {
+                        slidesPerView: 1,
+                        delay: 1
+
+                    },
+                    // When screen width is 768px or greater
+                    768: {
+                        slidesPerView: 2,
+
+                    },
+                    // When screen width is 1024px or greater
+                    1024: {
+                        slidesPerView: 3,
+
+                    },
+                    // When screen width is 1200px or greater
+                    1200: {
+                        slidesPerView: 4,
+                        delay: 1
+                    },
+                },
+            });
+
+
+            // button style 
+            document.querySelectorAll(".btns a").forEach((button) => {
+                button.addEventListener("click", function (e) {
+                    e.preventDefault(); // Prevent default link action
+
+                    let x = e.clientX - button.getBoundingClientRect().left;
+                    let y = e.clientY - button.getBoundingClientRect().top;
+
+                    let ripple = document.createElement("span");
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    this.appendChild(ripple);
+
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+
+        </script>
 
 </body>
 

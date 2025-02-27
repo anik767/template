@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
@@ -66,7 +66,7 @@
   padding: 0px;
 }
 
-body {
+/* body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -75,7 +75,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   color: #999aa6;
-}
+} */
 
 
 ul {
@@ -583,7 +583,7 @@ Banner Section
   /* Ensures the image covers the section */
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -20;
+  z-index: 20;
   position: relative;
 }
 
@@ -594,25 +594,34 @@ Banner Section
   width: 100%;
   position: absolute;
   opacity: .6;
-  z-index: -10;
+  z-index: 10;
 }
 
-.banner_content{
+.banner_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
   padding-left: 10%;
+  position: relative;
+  z-index: 10;
 }
-.banner_content span{
+
+.gradient-text {
+  background: linear-gradient(to right, #e85a19, #f5ce62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner_content span {
   font-family: "Epilogue", serif;
   font-size: clamp(24px, 4vw, 90px);
   font-weight: 600;
-  color: #FF665D;
+
   padding-bottom: 20px;
 }
 
-.banner_content h1{
+.banner_content h1 {
   /* font-family: "Poppins", serif; */
   font-family: "Epilogue", serif;
   font-size: clamp(24px, 4vw, 90px);
@@ -622,7 +631,7 @@ Banner Section
   width: 50%;
 }
 
-.banner_content p{
+.banner_content p {
   font-family: "Epilogue", serif;
   font-size: clamp(16px, 4vw, 20px);
   font-weight: 500;
@@ -631,14 +640,173 @@ Banner Section
   width: 350px;
 }
 
-.banner_content button{
-  font-family: "Epilogue", serif;
-  font-size: clamp(12px, 3vw, 20px);
+
+/* animated button  */
+.btns a {
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  display: block;
+  line-height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
   font-weight: 500;
-  color: #ffffff;
-  width: fit-content;
-  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* .btns a:first-child {
+  background: linear-gradient(-90deg, #f5ce62, #e85a19);
+  transition: 1s;
+}
+.btns a:first-child:hover {
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+  
+} */
+.btns a {
+  background: linear-gradient(-90deg, #f5ce62, #e85a19);
+  background-size: 200% 100%;
+  transition: background-position 1s ease-in-out;
+}
+
+.btns a:hover {
+  background-position: 100% 0;
+
+}
+
+
+
+/* Ripple Effect */
+.btns a span {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripples 0.6s linear;
+}
+
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.secound_section_bg {
+  position: relative;
+  padding: 5% 15%;
+}
+
+.secound_section_bg h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Epilogue", serif;
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.secound_section {
+  background-color: #F4F1EA;
+  text-align: center;
+
+}
+
+.secound_section_contain img {
+  width: 80%;
+  border-radius: 100%;
+  padding: 5px;
+  border: 2px dashed #000;
+
+}
+
+.secound_section_contain h4 {
+  font-family: "Epilogue", serif;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.secound_section_contain p {
+  font-family: "Epilogue", serif;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.secound_section_contain p:nth-last-of-type(1) {
+  font-family: "Epilogue", serif;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, #e85a19, #f5ce62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secound_section_contain {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
   border-radius: 24px;
-  background-color: #FF665D;
-  padding: 10px 20px;
+}
+
+/* slider  */
+
+.swiper-container {
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
