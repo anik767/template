@@ -303,6 +303,13 @@
                 <!-- Add Navigation (optional) -->
 
             </div>
+
+            <div class="updown tako">
+                <img src="./img/tako.png" alt="">
+            </div>
+            <div class="updown2 pizza">
+                <img src="./img/pizza.png" alt="">
+            </div>
         </div>
 
 
@@ -387,6 +394,45 @@
                             stagger: 0.1 // Each slide appears with a 0.2s delay
                         }
                     );
+
+                let scrollPosition = 0;
+
+                gsap.to(".updown", {
+                    y: "-20px",
+                    duration: 2,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power1.inOut",
+                });
+
+                window.addEventListener("wheel", (event) => {
+                    // Determine the scroll direction
+                    if (event.deltaY < 0) {
+                        // Scrolling up (move left)
+                        gsap.to(".updown", { x: "-10px", duration: 1, ease: "power1.inOut" });
+                    } else {
+                        // Scrolling down (move right)
+                        gsap.to(".updown", { x: "10px", duration: 1, ease: "power1.inOut" });
+                    }
+                });
+                gsap.to(".updown2", {
+                    x: "-20px",
+                    duration: 2,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "power1.inOut",
+                });
+                window.addEventListener("wheel", (event) => {
+                    // Determine the scroll direction
+                    if (event.deltaY < 0) {
+                        // Scrolling up (move left)
+                        gsap.to(".updown2", { y: "-10px", duration: 1, ease: "power1.inOut" });
+                    } else {
+                        // Scrolling down (move right)
+                        gsap.to(".updown2", { y: "10px", duration: 1, ease: "power1.inOut" });
+                    }
+                });
+
 
             });
 

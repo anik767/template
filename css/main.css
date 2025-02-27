@@ -810,3 +810,25 @@ Banner Section
   height: 100%;
   object-fit: cover;
 }
+
+/* sliser end  */
+.tako {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  rotate: 15deg;
+  opacity: .6;
+  }
+.tako img{
+width: 250px;
+}
+.pizza {
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  rotate: 15deg;
+  
+  }
+.pizza img{
+width: 250px;
+}
