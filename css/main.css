@@ -817,18 +817,22 @@ Banner Section
   top: 10%;
   left: 0%;
   rotate: 15deg;
-  opacity: .6;
-  }
-.tako img{
-width: 250px;
+  opacity: .3;
 }
+
+.tako img {
+  width: 250px;
+}
+
 .pizza {
   position: absolute;
   bottom: 10%;
   right: 0%;
   rotate: 15deg;
-  
-  }
-.pizza img{
-width: 250px;
+  opacity: .6;
+
+}
+
+.pizza img {
+  width: 250px;
 }
