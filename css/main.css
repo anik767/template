@@ -838,3 +838,10 @@ Banner Section
 .pizza img {
   width: 250px;
 }
+
+/* third section  */
+
+.third_section_bga{
+  height: 400px;
+  background-color: #444;
+}
