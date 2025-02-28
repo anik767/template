@@ -709,6 +709,7 @@ Banner Section
 .secound_section_bg {
   position: relative;
   padding: 5% 15%;
+  overflow: hidden;
 }
 
 .secound_section_bg h1 {
